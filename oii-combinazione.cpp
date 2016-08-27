@@ -1,4 +1,4 @@
-//Lotito Francesco il punteggio varia da 90/100 a 100 in base ai test case
+//Lotito Francesco
 #include<fstream>
 #include<algorithm>
 #include<vector>
