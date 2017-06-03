@@ -2,6 +2,7 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
+char s[12];
 
 struct tripletta
 {
@@ -9,19 +10,21 @@ struct tripletta
 	char c;
 };
 
+tripletta t[102];
+
 int main ()
 {
 	ifstream in("input.txt");
 	ofstream out("output.txt");
 	int m, n, k;
 	in>>m>>n>>k;
-	char s[k+1];
+
 	int i;
 	for(i=1;i<k+1;i++)
 	{
 		in>>s[i];
 	}
-	tripletta t[m+1];
+
 	for(i=1;i<m+1;i++)
 	{
 		in>>t[i].i;
@@ -41,5 +44,7 @@ int main ()
 		}
 	}
 	out<<q;
+	in.close();
+	out.close();
+	return 0;
 }
-	
